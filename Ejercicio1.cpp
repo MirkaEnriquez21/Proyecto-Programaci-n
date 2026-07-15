@@ -166,7 +166,7 @@ void mostrarTablaDatos(double datosX[], double datosY[], int totalDatos, int con
     for (int k = 0; k < totalDatos; k++) {
         cout << " " << datosX[k] << "\t" << datosY[k] << endl;
     }
-    cout << endl << " [INFO] Red entrenada en " << contadorIteraciones << " iteraciones." << endl;
+    cout << endl << "La red fue entrenada en " << contadorIteraciones << " iteraciones." << endl;
 }
 
 void simularPasoAPaso(double datosX[], double datosY[], int totalDatos, int contadorIteraciones, double pesoInicial, double sesgoInicial, double tasaAprendizaje) {
@@ -195,7 +195,7 @@ void simularPasoAPaso(double datosX[], double datosY[], int totalDatos, int cont
 void realizarPrediccion(double peso, double sesgo) {
     double xUsuario;
     while (true) {
-        cout << " PREDICCION EN VIVO:" << endl;
+        cout << " PREDICCION: " << endl;
         cout << " Ingrese cualquier numero para X (decimal o entero): " << endl;
         cout << " -> ";
         cin >> xUsuario;
